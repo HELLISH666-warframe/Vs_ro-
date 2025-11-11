@@ -1,0 +1,60 @@
+ron 70 % DONE Need to fix fucked up modchart.
+wasted 70 % DONE Need to fix fucked up modchart.
+ayo 95 % DONE needs to add jordans anim
+bloodshed 80 % DONE
+trojan-virus 90? % DONE
+
+ron-classic DONE
+wasted-classic DONE
+ayo-classic DONE
+bloodshed-classic 98 % DONE need to fix fucked up rain
+trojan-virus-classic DONE
+bleeding-classic 90 % DONE
+
+tutorial fuck you
+bloodbath 90 % DONE
+official-debate 90 % DONE
+gron 90 % DONE
+difficult-powers 
+bijuu  90 % DONE
+holy-shit-dave-fnf 70 % DONE need to fix char posision_and_needs_text_to_be_comic_fucking_sans
+slammed 70 % DONE must fix stage scale and and corn_bag_thing easter egg
+ron-dsides 90 % DONE
+lights-down-remix 90 % DONE
+pretty-wacky  DONE nMOTHA_FUCKA
+certified-champion DONE
+rong-aisle DONE
+bloodshed-legacy-redux 70 % DONE Need to fixed fucked up zooms.
+cluster-funk 99 % DONE NEED TO CODE BFGD DEATH
+oh-my-god-hes-ballin DONE
+awesome-ron DONE
+fardventure fuck you
+bleeding 97 % DONE
+
+freeplay 80 % DONE
+
+desktop 80 % DONE
+
+pausestate DONE
+
+MUST FIX DIALOGE VIDEO OVERLAP SOFT-LOCK
+
+use_classic_hellron_as_one_char_to_save_space
+
+//fucking_dumb_sprite_sheet_scaling
+ballerorina
+ron
+bloodbathnew
+conall
+bloodbathnew
+hellron-drippin
+ronMad
+ronDave
+ron-classic-wasted
+ronslightly
+presidentTrump
+
+//Cut_spritesheets
+gfDark
+dGF
+Bfdark

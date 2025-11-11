@@ -1,0 +1,39 @@
+{
+	"params": [
+		{
+			"name": "Angle",
+			"type": "String",
+			"defaultValue": "0"
+		},
+		{
+			"name": "Alpha",
+			"type": "String",
+			"defaultValue": "1"
+		}, 
+		{
+			"name": "Zoom",
+			"type": "String",
+			"defaultValue": "0.8"
+		}, 
+		{
+			"name": "Time",
+			"type": "String",
+			"defaultValue": "1"
+		}, 
+		{
+			"name": "Tween",
+			"type": "String",
+			"defValue": "circIn"
+		}, 
+		{
+			"name": "CamHUD?",
+			"type": "Bool",
+			"defaultValue": false
+		}, 
+		{
+			"name": "Set default zoom",
+			"type": "Bool",
+			"defaultValue": false
+		}
+	]
+}

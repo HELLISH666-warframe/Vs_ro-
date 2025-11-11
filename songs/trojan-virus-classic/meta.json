@@ -1,0 +1,8 @@
+{
+	"displayName": "trojan-virus-classic",
+	"bpm": 160.0,
+	"icon": "ronpower-classic",
+	"color": "#C02078",
+    "coopAllowed": true,
+    "opponentModeAllowed": true
+}

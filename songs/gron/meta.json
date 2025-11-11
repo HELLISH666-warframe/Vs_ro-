@@ -1,0 +1,8 @@
+{
+	"displayName": "gron",
+	"bpm": 140.0,
+	"icon": "gron",
+	"color": "#7F7F7F",
+    "coopAllowed": true,
+    "opponentModeAllowed": true
+}

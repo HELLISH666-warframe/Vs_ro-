@@ -1,0 +1,16 @@
+<!DOCTYPE codename-mod-options>
+<menu name="Ron options" desc="shader_shit">
+    <checkbox id="glitch" name="Glitch Shaders" desc="Toggle Glitch Shaders." />
+    <checkbox id="chrom" name="chromatic aberration" desc="Toggle chromatic aberration Shaders." />
+	<number id="chromeOffset" name="rgbintense" min="0.5" max="2" change="0.1"/>
+    <checkbox id="mosaic" name="mosaic Shader" desc="Toggle mosaic Shader. (ONLY_USED_IN_PRETTY-WACKY)" /> 
+    <checkbox id="crt" name="CRT Shader" desc="Toggle CRT shader." />
+    <checkbox id="colour" name="8bitcolor" desc="Toggle 8bitcolor shader." />
+    <checkbox id="grey" name="greyscale Shader" desc="Toggle greyscale Shader. (low/no intensive)" />   
+    <checkbox id="vhs" name="VHS Shader" desc="Toggle VHS Shaders." />
+	<checkbox id="rain" name="RAIN" desc="fucking_rain" />
+    <checkbox id="god" name="Godrays" desc="Toggle godrays." />
+	<checkbox id="warning" name="Show Startup Warning" desc="If checked, will show warnings at startup" />
+    <checkbox id="show_user_name" name="Show username" desc="Toggle showing user name." />
+    <checkbox id="website" name="Website Opening" desc="If checked, some songs may open websites in your browser."/>
+</menu>

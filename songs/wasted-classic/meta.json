@@ -1,0 +1,8 @@
+{
+	"displayName": "wasted-classic",
+	"bpm": 147.0,
+	"icon": "ronslightly-classic",
+	"color": "#A08060",
+    "coopAllowed": true,
+    "opponentModeAllowed": true
+}

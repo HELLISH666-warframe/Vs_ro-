@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="1.1" folder="stages/madStreet/">
+   	<sprite name="sky" x="-140" y="-9" sprite="ayo_sky" scale="2" />
+	<sprite name="mountainsback" x="-146" y="55" sprite="ayo_mountainsback" scale="2" />
+	<sprite name="mountains" x="-146" y="70" sprite="ayo_mountains" scale="2" />
+	<sprite name="hillfront" x="-130" y="300" sprite="ayo_hillfront" scale="2" />
+	<sprite name="street" x="0" y="230" sprite="ayo_street" scale="2.2" />
+	<sprite name="bgLol" x="0" y="230" sprite="ayo_streetNoLight" scale="2.2" />
+</stage>

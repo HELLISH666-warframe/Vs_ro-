@@ -1,0 +1,8 @@
+{
+	"displayName": "cluster-funk",
+	"bpm": 140.0,
+	"icon": "gdron",
+	"color": "#FF00FF",
+    "coopAllowed": true,
+    "opponentModeAllowed": true
+}

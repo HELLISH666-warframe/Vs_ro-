@@ -1,0 +1,8 @@
+{
+	"displayName": "fardventure",
+	"bpm": 160.0,
+	"icon": "sonic",
+	"color": "#002080",
+    "coopAllowed": true,
+    "opponentModeAllowed": true
+}

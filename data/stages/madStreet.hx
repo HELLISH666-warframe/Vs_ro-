@@ -1,0 +1,61 @@
+import flixel.effects.particles.FlxParticle;
+import flixel.effects.particles.FlxTypedEmitter;
+import openfl.display.BlendMode;
+var time:Float = 0;
+var fxtwo:FlxSprite = new FlxSprite().loadGraphic(Paths.image('stages/effect'));
+fxtwo.scale.set(1.5, 1.5);
+fxtwo.updateHitbox();
+fxtwo.antialiasing = true;
+fxtwo.screenCenter();
+fxtwo.alpha = 0.25;
+fxtwo.scrollFactor.set(0, 0);
+add(fxtwo);
+
+var rain:flixel.effects.particles.FlxTypedEmitter;
+rain = new FlxTypedEmitter(-1280,0, 1280);
+rain.loadParticles(Paths.image("stages/raindrop"),500);
+rain.scale.set(0.5, 0.5, 1, 1);
+rain.lifespan.set(0);
+rain.velocity.set(-20, 400,20,800);
+rain.keepScaleRatio = true;
+rain.width = 1280*4;
+rain.start(false, 0.01);
+var rain:CustomShader = new CustomShader("rain");
+var graadienter:FlxSprite = new FlxSprite(-100,-200).loadGraphic(Paths.image('stages/nothing/ss_gradient'));
+
+function update(elapsed:Float){time += elapsed;
+    rain.data.iTime.value = [time];}
+function create() {
+	graadienter.scale.set(2,2);
+	graadienter.blend = BlendMode.ADD;
+	graadienter.antialiasing = true;
+	insert(6, graadienter); // this should insert the bg behind the characters
+	graadienter.visible = false;
+}
+function postCreate() {				
+	FlxG.camera.addShader(rain);
+rain.data.zoom.value = [35];
+rain.data.raindropLength.value = [0.075];
+rain.data.opacity.value = [0.2];
+}
+function stepHit(curStep){
+	if (curStep % 8 == 0){
+			FlxTween.globalManager.completeTweensOf(graadienter);
+			graadienter.y += 40;
+			FlxTween.tween(graadienter,{y: graadienter.y - 40},0.4,{ease: FlxEase.backOut});
+		}
+    switch (curStep){
+		case 128:
+			graadienter.visible = true;
+			bgLol.visible = fxtwo.visible = false;
+		case 384:
+			graadienter.visible = false;
+		case 786:
+			camGame.color = FlxColor.GRAY;
+			bgLol.visible = fxtwo.visible = true;
+		case 1024:
+			bgLol.visible = fxtwo.visible = false;
+		case 1280:
+			graadienter.visible = true;
+    }
+}

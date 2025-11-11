@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="-200" icon="ronslightly" y="100" isGF="false" scale="0.5" camy="160" isPlayer="false" sprite="Pissedron" color="#AA8900">
+	<anim x="0" loop="false" y="0" fps="24" anim="ronIdle" name="idle"/>
+	<anim x="394" loop="false" y="-40" fps="24" anim="ronLeft" name="singLEFT"/>
+	<anim x="65" loop="false" y="-310" fps="24" anim="ronDown" name="singDOWN"/>
+	<anim x="278" loop="false" y="47" fps="24" anim="ronUp" name="singUP"/>
+	<anim x="-85" loop="false" y="-15" fps="24" anim="ronRight" name="singRIGHT"/>
+</character>

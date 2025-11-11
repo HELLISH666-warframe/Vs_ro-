@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.9" folder="stages/classicStages/">
+   	<sprite name="sky" x="-200" y="-100" scroll="0.1" scale="2" sprite="pissedRon_sky"/>
+	<sprite name="clouds" x="20" y="-60" scroll="0.2" scale="1.4" sprite="pissedRon_clouds"/>
+   	<sprite name="street" x="95" y="290" scale="2" sprite="pissedRon_ground"/>
+	<girlfriend x="400" />
+   	<dad camxoffset="-20" camyoffset="-45"/>
+   	<boyfriend x="754"/>
+</stage>

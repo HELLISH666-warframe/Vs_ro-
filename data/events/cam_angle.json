@@ -1,0 +1,24 @@
+{
+	"params": [
+		{
+			"name": "Angle",
+			"type": "String",
+			"defaultValue": "0"
+		},
+		{
+			"name": "Time",
+			"type": "String",
+			"defaultValue": "1"
+		}, 
+		{
+			"name": "Tween",
+			"type": "String",
+			"defValue": "FUCK"
+		}, 
+		{
+			"name": "CamHUD?",
+			"type": "Bool",
+			"defaultValue": false
+		}
+	]
+}

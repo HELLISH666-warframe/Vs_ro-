@@ -1,0 +1,8 @@
+{
+	"displayName": "certified-champion",
+	"bpm": 190.0,
+	"icon": "shittle",
+	"color": "#00FF40",
+    "coopAllowed": true,
+    "opponentModeAllowed": true
+}

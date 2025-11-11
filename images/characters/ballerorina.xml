@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Tex-Packer-EX v0.6.8 https://strawberrysage.github.io/tex-packer-ex
+-->
+<TextureAtlas imagePath="texture.png" width="3576" height="3003">
+  <SubTexture name="ballerorina baller0000.png" x="516.5" y="1349.5"  width="489.5" height="635" frameX="-337.5" frameY="-68" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina baller0001.png" x="529" y="1984.5"  width="489.5" height="635" frameX="-337.5" frameY="-68" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina baller0002.png" x="1533.5" y="0"  width="517" height="628" frameX="-311.5" frameY="-76.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina baller0003.png" x="1533.5" y="1903.5"  width="530" height="615" frameX="-299.5" frameY="-90.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina baller0004.png" x="2580.5" y="0"  width="536" height="609.5" frameX="-294.5" frameY="-96" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina baller0005.png" x="2209.5" y="617.5"  width="541" height="604.5" frameX="-290" frameY="-101" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina baller0006.png" x="1907.5" y="1253"  width="540.5" height="605" frameX="-290.5" frameY="-100.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina baller0007.png" x="1382" y="1278.5"  width="525.5" height="625" frameX="-304.5" frameY="-80.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina down0000.png" x="2472.5" y="2518.5"  width="570" height="450" frameX="-261" frameY="-252.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina down0001.png" x="1907.5" y="2518.5"  width="565" height="484" frameX="-260.5" frameY="-219.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina down0002.png" x="3042.5" y="1230.5" width="504.5" height="562.5" rotated="true"  frameX="-262" frameY="-200.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina idle0000.png" x="1684" y="628"  width="525.5" height="625" frameX="-304.5" frameY="-80.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina idle0001.png" x="1027.5" y="0"  width="496" height="649.5" frameX="-337.5" frameY="-56" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina idle0002.png" x="1018.5" y="1984.5"  width="515" height="633" frameX="-315.5" frameY="-72.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina idle0003.png" x="1042" y="649.5"  width="522.5" height="629" frameX="-309" frameY="-76.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina idle0004.png" x="2050.5" y="0"  width="530" height="617.5" frameX="-301" frameY="-88" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina idle0005.png" x="3042.5" y="617.5"  width="533.5" height="613" frameX="-297.5" frameY="-92.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina left0000.png" x="0" y="709.5" width="506" height="703" rotated="true"  frameX="-212.5" frameY="-200.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina left0001.png" x="0" y="1412.5" width="516.5" height="673.5" rotated="true"  frameX="-227.5" frameY="-189.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina left0002.png" x="0" y="2086" width="529" height="649" rotated="true"  frameX="-250.5" frameY="-177" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina right0000.png" x="2981" y="1799"  width="570.5" height="567" frameX="-438" frameY="-137.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina right0001.png" x="2063.5" y="1858"  width="557" height="578" frameX="-438" frameY="-126" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina right0002.png" x="2448" y="1253" width="591" height="546" rotated="true"  frameX="-435" frameY="-113.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina this is a certified0000.png" x="529" y="2619.5" width="527" height="381.5" rotated="true"  frameX="-395" frameY="-178.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina this is a certified0001.png" x="529" y="2619.5" width="527" height="381.5" rotated="true"  frameX="-395" frameY="-178.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina this is a certified0002.png" x="2620.5" y="1799"  width="360.5" height="576.5" frameX="-420" frameY="-129" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina this is a certified0003.png" x="2620.5" y="1799"  width="360.5" height="576.5" frameX="-420" frameY="-129" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina this is a certified0004.png" x="1006" y="1349.5"  width="376" height="635" frameX="-423" frameY="-72" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina this is a certified0005.png" x="1006" y="1349.5"  width="376" height="635" frameX="-423" frameY="-72" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina this is a certified0006.png" x="1056" y="2617.5" width="628" height="364.5" rotated="true"  frameX="-425.5" frameY="-79" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina this is a certified0007.png" x="1056" y="2617.5" width="628" height="364.5" rotated="true"  frameX="-425.5" frameY="-79" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina this is a certified0008.png" x="3116.5" y="0"  width="350" height="602" frameX="-426.5" frameY="-103.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina up0000.png" x="0" y="0"  width="503.5" height="709.5" frameX="-313.5" frameY="-1.5" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina up0001.png" x="503.5" y="0"  width="524" height="682.5" frameX="-299" frameY="-25" frameWidth="1280" frameHeight="720"/>
+  <SubTexture name="ballerorina up0002.png" x="506" y="682.5"  width="536" height="667" frameX="-287.5" frameY="-38" frameWidth="1280" frameHeight="720"/>
+</TextureAtlas>

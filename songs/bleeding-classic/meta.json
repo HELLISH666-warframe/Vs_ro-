@@ -1,0 +1,14 @@
+{
+	"opponentModeAllowed": true,
+	"icon": "hellron-classic",
+	"difficulties": [
+		"hard"
+	],
+	"color": "#010000",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Bleeding-classic",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 200
+}

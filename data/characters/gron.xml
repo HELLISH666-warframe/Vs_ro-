@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="gronner" camx="-180" camy="-40" color="#A1A1A1">
+	<anim name="singLEFT" anim="left" x="820" y="-93"/>
+	<anim name="singRIGHT" anim="right" x="150" y="50"/>
+	<anim name="singDOWN" anim="down" x="90" y="-50"/>
+	<anim name="singUP" anim="up" x="264" y="401"/>
+	<anim name="idle" anim="idle" x="130" y="-20"/>
+</character>

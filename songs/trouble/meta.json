@@ -1,0 +1,10 @@
+{
+    "displayName": "trouble",
+    "bpm": 250.0,
+    "icon": "ron-classic",
+    "port": "trouble",
+    "color": "#E00020",
+    "difficulties": [
+		"HARD"
+	]
+}

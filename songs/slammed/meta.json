@@ -1,0 +1,8 @@
+{
+	"displayName": "slammed",
+	"bpm": 150.0,
+	"icon": "bambi",
+	"color": "#007F40",
+    "coopAllowed": true,
+    "opponentModeAllowed": true
+}

@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.9" folder="stages/classicStages/">
+   <sprite name="sky" x="-314" y="-110" sprite="happyRon_sky" scale="1.2" updateHitbox="true"/>
+   <sprite name="street" x="80" y="210" sprite="happyRon_ground" scale="2.01"/>
+   <sprite name="bob" x="-737" y="400" sprite="GoodHeDied" alpha="0"/>
+</stage>

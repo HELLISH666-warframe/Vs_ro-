@@ -1,0 +1,8 @@
+{
+	"displayName": "holy-shit-dave-fnf",
+	"bpm": 160.0,
+	"icon": "dave",
+	"color": "#0000FF",
+    "coopAllowed": true,
+    "opponentModeAllowed": true
+}

@@ -1,0 +1,14 @@
+{
+	"opponentModeAllowed": true,
+	"icon": "ronslightly",
+	"difficulties": [
+		"hard"
+	],
+	"color": "#FFA500",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Wasted",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 130
+}

@@ -1,0 +1,14 @@
+{
+	"opponentModeAllowed": true,
+	"icon": "douyhe",
+	"difficulties": [
+		"hard"
+	],
+	"color": "#FFFFFF",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "pretty-wacky",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 130
+}

@@ -1,0 +1,14 @@
+{
+	"opponentModeAllowed": true,
+	"icon": "obama",
+	"difficulties": [
+		"hard"
+	],
+	"color": "#0020C0",
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "official-debate",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 195
+}

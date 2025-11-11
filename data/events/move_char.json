@@ -1,0 +1,25 @@
+{
+	"params": [
+		{
+			"name": "Char",
+			"type": "StrumLine",
+			"defaultValue": "0"
+		}, {
+			"name": "Time",
+			"type": "String",
+			"defaultValue": "0"
+		}, {
+			"name": "X",
+			"type": "String",
+			"defaultValue": 0
+		}, {
+			"name": "Y",
+			"type": "String",
+			"defaultValue": 0
+		}, {
+			"name": "Tween",
+			"type": "String",
+			"defaultValue": "expoOut"
+		}
+	]
+}

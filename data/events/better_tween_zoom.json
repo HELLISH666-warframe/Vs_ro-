@@ -1,0 +1,25 @@
+{
+	"params": [
+		{
+			"name": "Zoom",
+			"type": "String",
+			"defaultValue": "0"
+		}, {
+			"name": "Time",
+			"type": "String",
+			"defaultValue": "0"
+		}, {
+			"name": "Tween",
+			"type": "String",
+			"defValue": "null"
+		}, {
+			"name": "Camera",
+			"type": "DropDown('camGame', 'camHUD', 'FlxG.camera')",
+			"defaultValue": 0
+		}, {
+			"name": "Set default zoom",
+			"type": "Bool",
+			"defaultValue": true
+		}
+	]
+}

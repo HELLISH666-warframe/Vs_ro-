@@ -1,0 +1,8 @@
+{
+	"displayName": "Bijuu",
+	"bpm": 150.0,
+	"icon": "bijuuron",
+	"color": "#00B439",
+    "coopAllowed": true,
+    "opponentModeAllowed": true
+}
