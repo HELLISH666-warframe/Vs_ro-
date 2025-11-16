@@ -1,4 +1,3 @@
-
 import flixel.effects.particles.FlxTypedEmitter;
 import openfl.display.BlendMode;
 var fgfxtwo = new FlxSprite().loadGraphic(Paths.image('stages/pissedStreet/fog'));
@@ -11,9 +10,9 @@ rain.velocity.set(-20, 400,20,800);
 rain.keepScaleRatio = true;
 rain.width = 1280*4;
 rain.start(false, 0.01);
-var rain:CustomShader  = new CustomShader("rain");
-var glitch:CustomShader  = new CustomShader("glitchsmh");
-var chrom:CustomShader  = new CustomShader("chromatic aberration");
+var rain:CustomShader = new CustomShader("rain");
+var glitch:CustomShader = new CustomShader("glitchsmh");
+var chrom:CustomShader = new CustomShader("chromatic aberration");
 var crt = new CustomShader('fake CRT');
 var god = new CustomShader('godray');
 

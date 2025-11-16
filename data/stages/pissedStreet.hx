@@ -24,6 +24,20 @@ function postCreate() {
 	fog.camera = camHUD;
 	remove(fog);
 }
+function beatHit(curBeat){
+	if (PlayState.difficulty.toLowerCase() == 'v3') 
+	{
+	switch (curBeat)
+		{
+		case 340:
+/*		for (i in 0...8)
+			{ var member = strumLineNotes.members[i];member.y = defaultStrumY;}*/
+	}
+}
+if (PlayState.difficulty.toLowerCase() == 'hard') 
+	{
+	}
+}
 public function underwater(){
 	sky.visible = !sky.visible;
 	city.visible = !city.visible;

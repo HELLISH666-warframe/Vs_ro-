@@ -13,4 +13,10 @@
 	<checkbox id="warning" name="Show Startup Warning" desc="If checked, will show warnings at startup" />
     <checkbox id="show_user_name" name="Show username" desc="Toggle showing user name." />
     <checkbox id="website" name="Website Opening" desc="If checked, some songs may open websites in your browser."/>
+     <choice id="TimeBar" name="Time Bar" desc="What should the Time Bar display?">
+		<value name="Time Left" value="left"/>
+		<value name="Time Elapsed" value="elapsed"/>
+		<value name="Song Name" value="songName"/>
+		<value name="Disabled" value="disabled"/>
+	</choice>
 </menu>

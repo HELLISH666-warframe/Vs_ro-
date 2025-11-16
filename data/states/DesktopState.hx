@@ -1,4 +1,3 @@
-//𝔽𝕣𝕒𝕜𝕚𝕥𝕤_made_this_i_just_added_the_shaders
 import funkin.options.OptionsMenu;
 import funkin.menus.credits.CreditsMain;
 import flixel.addons.display.FlxBackdrop;
@@ -170,7 +169,7 @@ function acceptCode() {
 		FlxG.sound.music.volume = 0.01;
 		case "passionatedevs": //FlxG.save.data.rtxMode = !FlxG.save.data.rtxMode;
 		FlxG.camera.addShader(rtx = new CustomShader("NVIDIA RTX Architecture"));
-		default: if (typeText.text.contains("www")||typeText.text.contains("http")||typeText.text.contains("com")) 
+		default: 
 		CoolUtil.openURL(typeText.text);
 	}
 }
