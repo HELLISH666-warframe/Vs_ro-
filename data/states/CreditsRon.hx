@@ -1,9 +1,9 @@
-import flixel.text.FlxText.FlxTextAlign;
-import funkin.backend.utils.DiscordUtil;
-import openfl.display.BitmapData; 
-import flixel.math.FlxRandom;
-import Alphabetthing;
 import Sys;
+import Alphabetthing;
+import flixel.math.FlxRandom;
+import openfl.display.BitmapData; 
+import funkin.backend.utils.DiscordUtil;
+import flixel.text.FlxText.FlxTextAlign;
 var creditJSON:Dynamic;
 var nameGroup = [];
 var curSelected:Int = 0;
@@ -16,9 +16,11 @@ var time:Float = 0;
 
 function create() {
 	DiscordUtil.changePresence('Looking at Credits', null);
-	add(bg = CoolUtil.loadAnimatedGraphic(new FlxSprite(340,180),Paths.image('menus/freeplay/classicbgAnimate'))).scale.set(2,2);
+	bg = CoolUtil.loadAnimatedGraphic(new FlxSprite(340,180),Paths.image('menus/freeplay/classicbgAnimate'));
 	bg.color = FlxColor.RED;
 	bg.screenCenter();
+	bg.scale.set(2,2);
+	insert(0,bg);
 	creditJSON = Json.parse(Assets.getText(Paths.json("config/credit")));
 	for (i in 0...creditJSON.length){
 		var j = new Alphabetthing(0, 100 + (150 * i), creditJSON[i].handle,true);
@@ -66,7 +68,7 @@ function update(elapsed:Float) {
 	}
 }
 function changeSelection(e) {
-	curSelected = FlxMath.wrap(curSelected + e, 0, nameGroup.length-1);
+	curSelected += e;
 	if (curSelected > nameGroup.length - 1) keyCount += 1;
 		if (curSelected == 7 && keyCount > 30 && time < 3 && !antiSpam) {
 		FlxG.camera.shake(0.05, 3, function() {
@@ -86,9 +88,10 @@ function changeSelection(e) {
 		FlxG.sound.play(Paths.sound("rumble"));	
 		antiSpam = true;
 		for (j in nameGroup)
-			j.scale.set(FlxMath.lerp(j.scale.x, (4 - Math.abs(j.ID - curSelected)) * (0.3 - (j.text.length * 0.01)), 1), FlxMath.lerp(j.scale.y, (4 - Math.abs(j.ID - curSelected)) * (0.3 - (j.text.length * 0.01)), 1));
+				j.scale.set(FlxMath.lerp(j.scale.x, (4 - Math.abs(j.ID - curSelected)) * (0.3 - (j.text.length * 0.01)), 1), FlxMath.lerp(j.scale.y, (4 - Math.abs(j.ID - curSelected)) * (0.3 - (j.text.length * 0.01)), 1));
 	}
 	if (new FlxRandom().bool(20 * keyCount)) FlxG.sound.play(Paths.sound("thud"));
+	curSelected = (curSelected > nameGroup.length - 1 ? 0 : (curSelected < 0 ? nameGroup.length - 1 : curSelected));
 	FlxG.sound.music.volume = 0.2 * (5-keyCount);
 	largePortrait.loadGraphic(Paths.image("credits/" + creditJSON[curSelected].name));
 	largePortrait.setGraphicSize(350, 350);

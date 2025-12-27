@@ -1,6 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="newcharstest/trollRon" icon="tgt-ron" color="#f0391a" x="-60" y="260" flipX="true" antialiasing="false" camx="240" scale="1.1">
+<character x="0" y="280" sprite="trollRon" scale="1.1" antialiasing="false" flipX="true" camx="75" camy="40" isPlayer="true" color="#F0391A">
 	<anim name="idle" anim="trollRon idle" fps="12"/>
 	<anim name="singLEFT" anim="trollRon left" fps="12"/>
 	<anim name="singLEFTmiss" anim="trollRon missl" fps="12"/>

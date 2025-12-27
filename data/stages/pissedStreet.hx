@@ -1,17 +1,9 @@
-import flixel.effects.particles.FlxTypedEmitter;
-var wasdark = false;
+//yes_i_know_how_unoptimized_this_shit_is
+var fog:FlxSprite;
+var truefog:FlxSprite;
 var moveing:Bool = false;
 var time:Float = 0;
-
-var rain:flixel.effects.particles.FlxTypedEmitter;
-rain = new FlxTypedEmitter(-1280,0, 1280);
-rain.loadParticles(Paths.image("stages/raindrop"),500);
-rain.scale.set(0.5, 0.5, 1, 1);
-rain.lifespan.set(0);
-rain.velocity.set(-20, 400,20,800);
-rain.keepScaleRatio = true;
-rain.width = 1280*4;
-rain.start(false, 0.01);
+var wasdark = false;
 var rain = new CustomShader("rain");
 
 function postCreate() {
@@ -24,54 +16,37 @@ function postCreate() {
 	fog.camera = camHUD;
 	remove(fog);
 }
-function beatHit(curBeat){
-	if (PlayState.difficulty.toLowerCase() == 'v3') 
-	{
-	switch (curBeat)
-		{
-		case 340:
-/*		for (i in 0...8)
-			{ var member = strumLineNotes.members[i];member.y = defaultStrumY;}*/
-	}
-}
-if (PlayState.difficulty.toLowerCase() == 'hard') 
-	{
-	}
-}
-public function underwater(){
-	sky.visible = !sky.visible;
-	city.visible = !city.visible;
-	mountains.visible = !mountains.visible;
-	hillfront.visible = !hillfront.visible;
-	street.visible = !street.visible;
-	underwater.visible = !underwater.visible;
-	moveing = !moveing;
-	if (FlxG.save.data.rain)rain.opacity = 0;
-	dad.angle=boyfriend.angle=gf.angle=0;
-}
-function darkness() {
+
+function darkness()
+{
 	wasdark = !wasdark;
-	if (wasdark == true) {
-		for (i in stage.stageSprites) FlxTween.cancelTweensOf(i, ['color']);
+	if (wasdark == true)
+	{
+		for (i in stage.stageSprites) {
+			FlxTween.cancelTweensOf(i, ['color']);
+		}
 		truefog.visible = true;
-		add(fog).color = 0xFF77ADFF;
+		add(fog);
+		fog.color = 0xFF77ADFF;
 		FlxG.camera.flash(0xFF000000, 1, null, true);
-		dad.color = boyfriend.color = 0xFF000000;
+		dad.color = 0xFF000000;
+		boyfriend.color = 0xFF000000;
 		truefog.color = 0xFFFFFFFF;
 			
-		sky.color = city.color = 0xFFFFFFFF;
-		mountains.color = hillfront.color = street.color = 0xFF000000;
+		sky.color = 0xFFFFFFFF;
+		city.color = 0xFFFFFFFF;
+		mountains.color = 0xFF000000;
+		hillfront.color = 0xFF000000;
+		street.color = 0xFF000000;
 		street.alpha = 0.5;
 		hillfront.alpha = 0.25;
 		mountains.alpha = 0.125;
 			
 		gf.alpha = 0.75;
 		gf.color = 0xFF000000;
-	if (FlxG.save.data.rain) {rain.zoom = 40; rain.raindropLength = 0.1; rain.opacity = 0.3;}
 	}
 	else
 	{
-		if (FlxG.save.data.rain){rain.zoom = 36; rain.raindropLength = 0.07; rain.opacity = 0.2;}
 		truefog.visible = false;
 		remove(fog);
 		var it = 0; 
@@ -86,6 +61,22 @@ function darkness() {
 		street.alpha = hillfront.alpha = mountains.alpha = gf.alpha = 1;
 	}
 }
+
+public function underwater(){
+	sky.visible = !sky.visible;
+	city.visible = !city.visible;
+	mountains.visible = !mountains.visible;
+	hillfront.visible = !hillfront.visible;
+	street.visible = !street.visible;
+	underwater.visible = !underwater.visible;
+	moveing = !moveing;
+	if (FlxG.save.data.rain)rain.opacity = 0;
+	dad.angle=boyfriend.angle=gf.angle=0;
+	for (i in 0...4){cpuStrums.members[i].y=50;
+		playerStrums.members[i].y=50;
+	}
+}
+
 function update(elapsed) {
 	time += elapsed;
 	rain.iTime = time;
@@ -98,12 +89,5 @@ function update(elapsed) {
 	gf.angle += 0.7;
 	boyfriend.angle += Math.sin(curStep/8)/6;
 	dad.angle -= Math.sin(curStep/8)/6;
-	}
-}
-function fade()
-{
-	var it = 1; 
-	for (i in stage.stageSprites) {
-		FlxTween.color(i, (Conductor.crochet/1000) * 4.5,0xFFFFFFFF, 0xFF000000);
 	}
 }

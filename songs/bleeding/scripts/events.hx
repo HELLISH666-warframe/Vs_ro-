@@ -1,21 +1,14 @@
 import flixel.addons.effects.FlxTrail;
-import flixel.effects.particles.FlxTypedEmitter;
 import openfl.display.BlendMode;
 importScript("data/scripts/bloodbleed-shit");
+var rain = new CustomShader("rain");
 var time = 0;
 var glitch = new CustomShader("glitchsmh");
 var bleed = new CustomShader("bleedingvhs");
 var vhs = new CustomShader("vhs");
 var bloodshedTrail = null;
-var rain = new FlxTypedEmitter(-1280,0, 1280).loadParticles(Paths.image("stages/raindrop"),500);
-rain.scale.set(0.5, 0.5, 1, 1);
-rain.lifespan.set(0);
-rain.velocity.set(-20, 400,20,800);
-rain.keepScaleRatio = true;
-rain.width = 1280*4;
-rain.start(false, 0.01);
-var rain = new CustomShader("rain");
 exploders.scale.set(3.8, 3.8);
+
 function postCreate(){
     evilbar();
     if (FlxG.save.data.rain){camGame.addShader(rain);rain.zoom = 40;
@@ -28,11 +21,10 @@ function update(elapsed:Float){time += elapsed;
         i.iTime=time;
 }
 function beatHit(curBeat){
-    switch (curBeat)
-    {
+    switch (curBeat) {
         case 64:
-		for (i in 0...playerStrums.members.length)FlxTween.tween(playerStrums.members[i], {x: playerStrums.members[i].x - 320},1,{ease: FlxEase.linear});
-		for (i in 0...cpuStrums.members.length)FlxTween.tween(cpuStrums.members[i],{x: cpuStrums.members[i].x - 1250,angle: cpuStrums.members[i].angle + 359},1,{ease: FlxEase.linear});
+		for (i in 0...4)FlxTween.tween(playerStrums.members[i], {x: playerStrums.members[i].x - 320},1,{ease: FlxEase.linear});
+		for (i in 0...4)FlxTween.tween(cpuStrums.members[i],{x: cpuStrums.members[i].x - 1250,angle: cpuStrums.members[i].angle + 359},1,{ease: FlxEase.linear});
         case 96:
         Estatic.alpha=1;
         FlxTween.tween(Estatic,{"scale.x":1.2,"scale.y":1.2},Conductor.crochet / 1000,{ease: FlxEase.quadInOut,type: FlxTween.PINGPONG});

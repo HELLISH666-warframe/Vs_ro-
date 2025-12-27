@@ -9,7 +9,7 @@ var optionArray = [["resume song","restart song","settings","shut down","log off
 var curSelected = [0,0];
 var menu = 0;
 var optionButtons = [[],[]];
-var pauseMusic = FlxG.sound.load(Paths.music('breakfast'), 0, true);
+var pauseMusic = FlxG.sound.load(Paths.music('tstpwyptg'), 0, true);
 var bit = new CustomShader("8bitcolor");
 var camPause = new FlxCamera();
 function postCreate(){

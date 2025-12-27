@@ -1,16 +1,8 @@
-function postCreate(){ for(i in [healthBarBG1,healthBarBG2,healthBar1]) i.flipX = true;
+function postCreate(){ for(i in [healthBarBG1,healthBarBG2]) i.flipX = true;
 	iconP2.flipX=iconP1.flipX=true;
 	remove(iconP1);
 	insert(2,iconP1);
 	gf.visible = stage.getSprite("nothing").visible = false;
-	for(s in strumLines.members[2]) {
-        s.camera = camGame;
-        s.scrollFactor.set(1,1);
-		s.x += 260;
-		s.y -= 60;
-		s.alpha = 0;
-		FlxTween.cancelTweensOf(s);
-    }
 }
 function beatHit(curBeat) {
 	switch(curBeat) {
@@ -24,15 +16,12 @@ function beatHit(curBeat) {
 		dad.color = boyfriend.color = FlxColor.WHITE;
 		gf.visible = stage.getSprite("bg").visible=true;
 		stage.getSprite("nothing").visible=false;
-		for(s in strumLines.members[2]) {
-                FlxTween.tween(s, {alpha:1},  1, {ease: FlxEase.expoOut});
-            }
 		case 294:
 		camGame.flash(FlxColor.WHITE, 1);
 		iconP2.setIcon('trump');
 		remove(iconP1);
 		insert(members.indexOf(iconP2)+1, iconP1);
-		healthBarBG2.color=0xE08B73;
+		barbg2.color=0xE08B73;
 	}
 }
 function postUpdate(elapsed){	

@@ -15,6 +15,9 @@ for(i in [bart,baro]){
 }
 function postCreate(){
     for(i in [healthBarBG1,healthBarBG2,missesTxt,accuracyTxt,scoreTxt,iconP1,iconP2]) i.alpha=0.001;
+	timeBarBG.visible = false;
+	timeBar.visible = false;
+	timeTxt.visible = false;
 	camHUD.color = FlxColor.GRAY;
 	if (FlxG.save.data.mosaic) {FlxG.camera.addShader(mosaic); camHUD.addShader(mosaic);
 	}
@@ -28,7 +31,8 @@ function stepHit(curStep){
 		defaultCamZoom += 0.2;
 		case 256:
 		camHUD.color = FlxColor.WHITE;
-		for(i in [healthBarBG1,healthBarBG2,missesTxt,accuracyTxt,scoreTxt,iconP1,iconP2,timeTxt,timeBarBG,timeBar]) i.alpha=1;
+		for(i in [healthBarBG1,healthBarBG2,missesTxt,accuracyTxt,scoreTxt,iconP1,iconP2]) i.alpha=1;
+		if(FlxG.save.data.TimeBar != 'Disabled') timeBarBG.visible = timeBar.visible = timeTxt.visible = true;
 		defaultCamZoom -= 0.1;
 		FlxG.camera.flash(FlxColor.WHITE, 1);
 		FlxG.camera.bgColor = FlxColor.WHITE;

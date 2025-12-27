@@ -7,4 +7,5 @@ void main() {
 	gl_FragColor.r += (colors.x * cos(gl_FragColor.r) / 2.5) * gl_FragColor.a;
     gl_FragColor.g += (colors.y * cos(gl_FragColor.g) / 2.5) * gl_FragColor.a;
     gl_FragColor.b += (colors.z * cos(gl_FragColor.b) / 2.5) * gl_FragColor.a;
+
 }

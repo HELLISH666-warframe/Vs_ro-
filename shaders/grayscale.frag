@@ -1,6 +1,7 @@
 #pragma header
 uniform float enable;
-void main() {
+void main()
+{
     vec2 uv = openfl_TextureCoordv;
 
     //made my own grayscale shader cuz the current one is dogshit

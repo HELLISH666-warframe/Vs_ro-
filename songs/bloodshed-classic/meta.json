@@ -1,8 +1,14 @@
 {
-	"displayName": "Bloodshed-classic",
-	"bpm": 170.0,
+	"opponentModeAllowed": true,
 	"icon": "hellron-classic",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#280000",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Bloodshed-classic",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 170
 }

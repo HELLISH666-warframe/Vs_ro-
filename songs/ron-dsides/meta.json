@@ -1,8 +1,14 @@
 {
-	"displayName": "ron-dsides",
-	"bpm": 181.0,
+	"opponentModeAllowed": true,
 	"icon": "ron-dsides",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#9933CC",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "ron-dsides",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 181
 }

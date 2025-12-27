@@ -1,8 +1,14 @@
 {
-	"displayName": "ayo",
-	"bpm": 150.0,
+	"opponentModeAllowed": true,
 	"icon": "ronmad",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#8B4513",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "ayo",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 150
 }

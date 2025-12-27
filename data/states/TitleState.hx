@@ -1,15 +1,18 @@
 import flixel.addons.display.FlxBackdrop;
 var done = false;
 var god = new CustomShader("godray");
-var color = new CustomShader("colorizer");
+var fish = new CustomShader("colorizer");
 var chrom = new CustomShader("chromatic aberration");
 var time:Float = 0;
 function update(elapsed:Float) {
-	if (done != (done = true)){
-		animScreen = new FlxSprite(320,180);
+	if (done != (done = true)) {
+		animScreen = new FlxSprite();
+		animScreen.scale.set(2,2);
 		animScreen.frames = Paths.getSparrowAtlas('menus/titlescreen/trueTitleBgAnimated');
 		animScreen.animation.addByPrefix('animate', 'animate', 30, true);
-		insert(1,animScreen).scale.set(2,2);
+		animScreen.animation.play('animate');
+		animScreen.screenCenter();
+		insert(1,animScreen);
 			
 		if (blackScreen.frames != null) {
 			CoolUtil.loadAnimatedGraphic(blackScreen, Paths.image("menus/titlescreen/titleThing"));
@@ -21,10 +24,10 @@ function update(elapsed:Float) {
 		animbarScrb = new FlxBackdrop(Paths.image('menus/titlescreen/trueTitleBarBottom'), FlxAxes.X, 0, 0);
 		animbarScrb.velocity.x -= 120;
 		animbarScrt.velocity.x += 120;
-		insert(2,animbarScrb);
-		insert(2,animbarScrt);
+		insert(members.indexOf(titleScreenSprites), animbarScrb);
+		add(animbarScrt);
 		titleTextt = new FlxSprite().loadGraphic(Paths.image('menus/titlescreen/trueTitlePlay'));
-		insert(3,titleTextt);
+		insert(members.indexOf(titleScreenSprites), titleTextt);
 		new FlxTimer().start(0.005, function(tmr:FlxTimer)
 		{
 			animbarScrb.x -= 2;
@@ -33,39 +36,43 @@ function update(elapsed:Float) {
 		});
 	}
 	time += elapsed;
-	color.data.colors.value = [time/2];
-	chrom.rOffset = chromeOffset*Math.sin(time);
-	chrom.bOffset = -chromeOffset*Math.sin(time);
-	god.iTime = time;
+	fish.data.colors.value = [time/2];
+	chrom.data.rOffset.value = [chromeOffset*Math.sin(time)];
+	chrom.data.bOffset.value = [-chromeOffset*Math.sin(time)];
 	titleTextt.angle += Math.sin(-time*8)/16;
+	var pressedEnter:Bool = FlxG.keys.justPressed.ENTER;
 
-	if (FlxG.keys.justPressed.ENTER) {
-		if (!skippedIntro) skipIntro();
-		else if (transitioning) pressEnter();
-		if (curBeat <= 16) {
-		FlxG.camera.addShader(color);if (FlxG.save.data.god)FlxG.camera.addShader(god);
-	    animbarScrt.alpha=animbarScrb.alpha=1;}
+	if (pressedEnter) {
+		if (!skippedIntro)
+			skipIntro();
+		else if (transitioning)
+			pressEnter();
+		if (curBeat <= 16 && FlxG.keys.justPressed.ENTER) {
+			FlxG.camera.addShader(fish);
+			FlxG.camera.addShader(god);
+		}
 	}
 }
 function beatHit(){
-	if (!skippedIntro) animbarScrt.alpha=animbarScrb.alpha=0;
-	if ((curBeat == 16) && (!skippedIntro)) {
-		FlxG.camera.addShader(color);if (FlxG.save.data.god)FlxG.camera.addShader(god);
-		animbarScrt.alpha=animbarScrb.alpha=1;}
+	if (curBeat == 16 && !skippedIntro) {
+		FlxG.camera.addShader(fish);
+		FlxG.camera.addShader(god);
+	}
 	if(!transitioning){
 	FlxTween.completeTweensOf(FlxG.camera);
 	FlxG.camera.zoom += 0.03;
 	animScreen.animation.play('animate', true);
 	FlxTween.tween(FlxG.camera, {zoom: 1}, Conductor.crochet / 1500, {ease: FlxEase.backOut});}}
-function create() if(FlxG.save.data.chrom)FlxG.camera.addShader(chrom);
-function pressEnter(){
+function create() if(FlxG.save.data.chrom) FlxG.camera.addShader(chrom);
+function pressEnter() {
 	FlxTween.tween(titleTextt, {y: titleTextt.y - 500}, 2, {ease: FlxEase.backIn});
+	
 	FlxTween.cancelTweensOf(FlxG.camera);
 	FlxTween.tween(FlxG.camera, {zoom: 3, angle: 22}, 1.1, {ease: FlxEase.quartIn});
 	FlxTween.tween(animbarScrt, {y: animbarScrt.y - 200}, 0.5, {ease: FlxEase.quadIn});
 	FlxTween.tween(animbarScrb, {y: animbarScrb.y + 200}, 0.5, {ease: FlxEase.quadIn});
 	FlxG.camera.fade(0xFF000000, 0.8, true);
 
-	import funkin.editors.ui.UIState;
-	new FlxTimer().start(1, ()-> FlxG.switchState(new UIState(true ,'DesktopState')));
+	new FlxTimer().start(1, function(tmr:FlxTimer)
+	FlxG.switchState(new ModState('DesktopState')));
 }

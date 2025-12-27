@@ -1,6 +1,14 @@
 {
-	"displayName": "Bloodbath",
-	"bpm": 170.0,
+	"opponentModeAllowed": false,
 	"icon": "demonron",
-	"color": "#832034"
+	"difficulties": [
+		"hard"
+	],
+	"color": "#832034",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Bloodbath",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 170
 }

@@ -1,15 +1,14 @@
 <!DOCTYPE codename-engine-stage>
 <stage zoom="0.8" folder="stages/pissedStreet/">
-   	<sprite name="underwater" x="20" y="300" sprite="underwater" scroll="0.7" scale="5" />
-	<sprite name="sky" x="-140" y="-9" sprite="wasted_sky" scroll="0.1" scale="2" />
-	<sprite name="city" x="-146" y="55" sprite="wasted_city" scroll="0.25" scale="2" />
-	<sprite name="mountains" x="-140" y="270" sprite="wasted_mountains" scroll="0.3" scale="2"/>
+   	<sprite name="underwater" x="20" y="100" sprite="underwater" scroll="0.7" scale="4" />
+   	<sprite name="sky" x="-300" y="-200" sprite="wasted_sky" scroll="0.1" scale="2"/>
+   	<sprite name="city" x="-300" y="-100" sprite="wasted_city" scroll="0.25" scale="2"/>
+   	<sprite name="mountains" x="-300" y="-200" sprite="wasted_mountains" scroll="0.3" scale="2"/>
 	<sprite name="truefog" sprite="truefog" scroll="0.8" scale="2" />
-	<sprite name="hillfront" x="-130" y="425" sprite="wasted_hillfront" scroll="0.3" scale="2" />
-   	<sprite name="fog" x="-800" y="-400" sprite="fog" scale="3" scroll="0.1"/>
-	<sprite name="street" x="0" y="170" sprite="wasted_street" scale="2.2"/>
-	<girlfriend />
-   	<dad />
-   	<boyfriend />
-	<sprite name="fog" x="0" y="170" sprite="fog" scale="2" scroll="0.8"/>
+   	<sprite name="hillfront" x="-300" y="-200" sprite="wasted_hillfront" scroll="0.3" scale="2"/>
+   	<sprite name="fog" x="-300" y="-400" sprite="fog" scale="3" scroll="0.1"/>
+   	<sprite name="street" x="-300" y="-400" sprite="wasted_street" scale="2"/>
+	<girlfriend x="150" y="-270" scroll="1"/>
+   	<dad x="-150" y="-300"/>
+   	<boyfriend x="650" y="-300"/>
 </stage>

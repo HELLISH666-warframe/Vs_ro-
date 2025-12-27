@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="Trojan_Ron" icon="ronpower-classic" x="0" y="200" color="#FFFC00" holdTime="6.1">
+<character sprite="Trojan_Ron" icon="ronpower-classic" x="120" y="170" color="#FFFC00" holdTime="6.1">
 	<anim name="idle" anim="Trojan Ron Idle" x="0" y="0" fps="24" loop="true"/>
 	<anim name="singUP" anim="Trojan Ron Up" x="42" y="-172" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="Trojan Ron Down" x="40" y="-280" fps="24" loop="false"/>

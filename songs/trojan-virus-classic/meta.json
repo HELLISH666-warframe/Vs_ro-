@@ -1,8 +1,14 @@
 {
-	"displayName": "trojan-virus-classic",
-	"bpm": 160.0,
+	"opponentModeAllowed": true,
 	"icon": "ronpower-classic",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#C02078",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "trojan-virus-classic",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 160
 }

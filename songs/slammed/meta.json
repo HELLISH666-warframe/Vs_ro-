@@ -1,8 +1,14 @@
 {
-	"displayName": "slammed",
-	"bpm": 150.0,
+	"opponentModeAllowed": true,
 	"icon": "bambi",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#007F40",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "slammed",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 200
 }

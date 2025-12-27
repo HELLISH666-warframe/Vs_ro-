@@ -1,4 +1,5 @@
 import flixel.math.FlxRect;
+import funkin.backend.system.Flags;
 
 public var healthBarBG1 = new FlxSprite();
 public var healthBarBG2 = new FlxSprite();
@@ -33,6 +34,6 @@ function postCreate() {
     }
 }
 function onEvent(_) {
-	if (_.event.name == 'Change Character')
+	if (_.event.name == 'Change Character'&&!_.event.params[4])
         new FlxTimer().start(.01,()->{healthBarBG1.color=boyfriend.iconColor;healthBarBG2.color=dad.iconColor;});
 }

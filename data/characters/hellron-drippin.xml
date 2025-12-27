@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character sprite="dripron copy" x="590" y="510" camx="-500" camy="50" icon="dripron" holdTime="6.1">
+<character sprite="dripron" x="590" y="510" camx="-500" camy="50" icon="dripron" holdTime="6.1">
 	<anim name="idle" anim="dripron idle" x="-405" y="-269" fps="12" loop="true"/>
 	<anim name="singLEFT" anim="dripron left" x="-318" y="-262" fps="12" loop="false"/>
 	<anim name="singRIGHT" anim="dripron right" x="-475" y="-308" fps="12" loop="false"/>

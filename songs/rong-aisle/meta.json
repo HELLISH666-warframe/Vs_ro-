@@ -1,8 +1,14 @@
 {
-	"displayName": "rong-aisle",
-	"bpm": 160.0,
+	"opponentModeAllowed": true,
 	"icon": "rondvd",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#00FF40",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "rong-aisle",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 160
 }

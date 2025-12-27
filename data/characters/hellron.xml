@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character y="475" sprite="hellron" scale="1.13" icon="bleeding-classic" color="#080808">
+<character x="40" y="475" sprite="hellron" scale="1.13" icon="bleeding-classic" camx="-200" camy="-70" color="#080808">
 	<anim name="idle" anim="idle normal" x="-85" y="160" fps="24" loop="true"/>
 	<anim name="singUP" anim="up normal" x="47" y="260" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="down normal" x="-10" y="99" fps="24" loop="false"/>

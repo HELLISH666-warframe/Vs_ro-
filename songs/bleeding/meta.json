@@ -1,6 +1,14 @@
 {
-	"displayName": "Bleeding",
-	"bpm": 200.0,
+	"opponentModeAllowed": false,
 	"icon": "dripron",
-	"color": "#000000"
+	"difficulties": [
+		"cool"
+	],
+	"color": "#000000",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Bleeding",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 200
 }

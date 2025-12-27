@@ -1,15 +1,6 @@
-import flixel.effects.particles.FlxTypedEmitter;
 import openfl.display.BlendMode;
 var fgfxtwo = new FlxSprite().loadGraphic(Paths.image('stages/pissedStreet/fog'));
 var time:Float = 0;
-var rain:FlxTypedEmitter = new FlxTypedEmitter(-1280,0, 1280);
-rain.loadParticles(Paths.image("stages/raindrop"),500);
-rain.scale.set(0.5, 0.5, 1, 1);
-rain.lifespan.set(0);
-rain.velocity.set(-20, 400,20,800);
-rain.keepScaleRatio = true;
-rain.width = 1280*4;
-rain.start(false, 0.01);
 var rain:CustomShader = new CustomShader("rain");
 var glitch:CustomShader = new CustomShader("glitchsmh");
 var chrom:CustomShader = new CustomShader("chromatic aberration");

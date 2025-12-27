@@ -1,4 +1,3 @@
-//frakits_made_the_modchart
 function postCreate() {
 	camHUD.height += 60;
 	camGame.zoom = 0.6;
@@ -17,29 +16,4 @@ function beatHit(curBeat) {
 		camGame.zoom += 0.05;
 	}
 }
-
-GameOverSubstate.script = 'data/scripts/gameovers/meta';
-function onEnd(event) {
-	boyfriend.visible = false;
-//	deathSoundName = 'gdDeath';
-	var emitter = new FlxEmitter(boyfriend.x + 90, boyfriend.y - 50);
-
-	for (i in 0 ... 32)
-	{
-		var p = new FlxParticle();
-		var bSize = FlxG.random.int(8,20);
-		p.makeGraphic(bSize, bSize, 0xFFFFFFFF);
-		p.exists = false;
-		//p.alphaRange = new FlxRange(1.0, 0.0);
-		emitter.add(p);
-	}
-	
-	FlxTween.tween(FlxG.camera, {alpha: 0}, 2, {ease: FlxEase.linear});
-	
-	emitter.velocity.set(-32, 32, 32, -32);
-	emitter.lifespan.set(3);
-	add(emitter);
-	emitter.start(true, 1, 0);
-	FlxG.switchState(new PlayState());	
-
-}
+function flash() camHUD.flash();

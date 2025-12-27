@@ -1,8 +1,14 @@
 {
-	"displayName": "difficult-powers",
-	"bpm": 340.0,
+	"opponentModeAllowed": true,
 	"icon": "tgt-sonic",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#00A2E8",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "difficult-powers",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 210
 }

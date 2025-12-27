@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
 <!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="newcharstest/arongus" icon="arongus" color="#ffee00" x="-160" y="160" camx="-120" camy="20" holdTime="6.1">
+<character sprite="arongus" icon="arongus" color="#ffee00" x="-160" y="160" camx="-240" camy="100" holdTime="6.1">
 	<anim name="idle" anim="arongus idle" fps="12"/>
 	<anim name="singLEFT" anim="arongus left" fps="12"/>
 	<anim name="singDOWN" anim="arongus down" fps="12"/>

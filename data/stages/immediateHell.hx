@@ -5,7 +5,7 @@ function postCreate() {
 	satan.screenCenter();
 	satan.updateHitbox();
 
-	hellbg.alpha = 	satan.alpha = islands.alpha = firebg.alpha =0;
+	mountainsbackbl.alpha=hellbg.alpha = satan.alpha = islands.alpha = firebg.alpha =0;
 }
 function beatHit(curBeat){
 	switch (curBeat){

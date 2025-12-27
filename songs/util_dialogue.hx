@@ -36,7 +36,7 @@ if (Assets.exists(Paths.file("songs/" + curSong + "/dialogue.json")) && PlayStat
 		bg = new FlxSprite().loadGraphic(Paths.image("dialogue assets/bg"));
 		add(spriteGroup);
 		spriteGroup.camera = camHUD;
-		spriteGroup.add(bg);
+		spriteGroup.add(bg).scale.set(2,2);
 		spriteGroup.add(backdropThingy);
 		var portraiter = [];
 		var alieasesesae = [];

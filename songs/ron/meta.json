@@ -1,8 +1,14 @@
 {
-	"displayName": "ron",
-	"bpm": 170.0,
+	"opponentModeAllowed": true,
 	"icon": "ron",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#FFFF00",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "ron",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 170
 }

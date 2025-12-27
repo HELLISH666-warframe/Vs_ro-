@@ -1,8 +1,14 @@
 {
-	"displayName": "gron",
-	"bpm": 140.0,
+	"opponentModeAllowed": true,
 	"icon": "gron",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#7F7F7F",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "gron",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 140
 }

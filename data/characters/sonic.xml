@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
 <!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="newcharstest/sonker" icon="sonic" color="#2a51c4" y="270" x="-1" flipX="true" scale="1.3">
+<character sprite="sonker" icon="sonic" color="#2a51c4" y="270" x="-1" flipX="true" scale="1.3">
 	<anim name="idle" anim="idle" x="-6.153846153846153" y="0" fps="30" loop="true"/>
 	<anim name="singLEFT" anim="walk" x="738.4615384615385" y="0" fps="30"/>
 	<anim name="singDOWN" anim="fart" fps="30"/>

@@ -1,8 +1,14 @@
 {
-	"displayName": "Bloodshed-legacy-redux",
-	"bpm": 142.0,
+	"opponentModeAllowed": true,
 	"icon": "hahanotscary",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#FF0000",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Bloodshed-legacy-redux",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 142
 }

@@ -7,7 +7,7 @@ Camera Zoom.hx________PACKSEP________function onEvent(_){
 	"params": [
 		{
 			"name": "Camera",
-			"type": "DropDown('camGame', 'camHUD')",
+			"type": "DropDown('camGame', 'camHUD', 'FlxG.camera')",
 			"defaultValue": 0
 		},
 		{

@@ -1,8 +1,14 @@
 {
-	"displayName": "certified-champion",
-	"bpm": 190.0,
+	"opponentModeAllowed": true,
 	"icon": "shittle",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#00FF40",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "certified-champion",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 190
 }

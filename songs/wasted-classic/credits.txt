@@ -1,17 +1,15 @@
 COMPOSER(s)
-
 ArmandRonan
+Sic
 
-/coquers_
-
-CHARTER(s)
-
-Sam
-
-ARTIST(s)
-
+ADDITIONAL HELPER(s)
 Seezee
 
-Benju
+CHARTER(s)
+Sam
+Karbis
 
+ARTIST(s)
+Terionic
+Seezee
 Wildythomas

@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
 <!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="newcharstest/bloodshitron" icon="demonron" color="#833434" x="80" y="300" camy="-20" camx="-250" holdTime="4.9" scale="0.9">
+<character sprite="bloodshitron" icon="demonron" color="#833434" x="80" y="300" camy="-20" camx="-250" holdTime="4.9" scale="0.9">
 	<anim name="idle" anim="idle"/>
 	<anim name="singLEFT" anim="left" x="88.88888888888889" y="8.88888888888889"/>
 	<anim name="singDOWN" anim="down" x="132.22222222222223" y="-36.666666666666664"/>

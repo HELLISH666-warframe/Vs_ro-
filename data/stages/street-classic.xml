@@ -1,6 +1,8 @@
 <!DOCTYPE codename-engine-stage>
 <stage zoom="0.9" folder="stages/classicStages/">
-   <sprite name="sky" x="-314" y="-110" sprite="happyRon_sky" scale="1.2" updateHitbox="true"/>
-   <sprite name="street" x="80" y="210" sprite="happyRon_ground" scale="2.01"/>
-   <sprite name="bob" x="-737" y="400" sprite="GoodHeDied" alpha="0"/>
+   <sprite name="sky" x="-430" y="-115" sprite="happyRon_sky" scale="1.2" updateHitbox="true" scroll="1"/>
+   <sprite name="street" x="-680" y="-320" sprite="happyRon_ground"/>
+   <girlfriend x="300" y="140"/>
+   <dad/>
+   <boyfriend x="620" y="90"/>
 </stage>

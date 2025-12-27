@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character x="-1821" y="-630" sprite="newcharstest/americanRon" scale="1.5" flipX="true" camx="1500" camy="600" isPlayer="true" icon="ron" color="#F1FD10">
+<character x="-1821" y="-630" sprite="americanRon" scale="1.5" flipX="true" camx="1500" camy="600" isPlayer="true" icon="ron" color="#F1FD10">
 	<anim name="idle" anim="ron idle" x="-700" y="-490"/>
 	<anim name="singLEFT" anim="ron left" x="-515" y="-465" indices="0..4"/>
 	<anim name="singDOWN" anim="ron down" x="-646" y="-570" indices="0..4"/>

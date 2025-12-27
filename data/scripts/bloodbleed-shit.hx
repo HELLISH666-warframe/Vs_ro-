@@ -1,5 +1,6 @@
 import openfl.display.BlendMode;
 import flixel.text.FlxTextBorderStyle;
+importScript("data/scripts/healthdrainers");
 var time:Float = 0;
 public var windowmovebath:Bool = false;
 public var cameramoveblood:Bool = false;
@@ -35,16 +36,19 @@ override function update(elapsed:Float){time += elapsed;
 	chrom.data.rOffset.value = [chromeOffset*Math.sin(time)];
 	chrom.data.bOffset.value = [-chromeOffset*Math.sin(time)];
 	var currentBeat:Float = (Conductor.songPosition / 1000)*(Conductor.bpm/60);
+	//Used in Bloodbath.
 if (windowmovebath)
 	window.move(Math.round(24 * Math.sin(currentBeat * Math.PI) + 327), Math.round(24 * Math.sin(currentBeat * 3) + 160));
+//Cameramove used in Bloodbath and Bloodshed
 if (cameramoveblood) {
 	camHUD.angle = 11 * Math.sin((currentBeat/6) * Math.PI);
 	FlxG.camera.angle = 2 * Math.sin((currentBeat/6) * Math.PI);
-	}
+}
+//Intensecameramove used in Bloodshed
 if (intensecameramoveshed) {
 	camHUD.angle = 11 * Math.sin((currentBeat/2) * Math.PI);
 	FlxG.camera.angle = 4 * Math.sin((currentBeat/2) * Math.PI);
-	}
+}
 if (cameramovebleed) {
 	camHUD.angle = 22 * Math.sin((currentBeat/4) * Math.PI);
 	FlxG.camera.angle = 4 * Math.sin((currentBeat/4) * Math.PI);
@@ -85,5 +89,9 @@ function onPlayerHit(e) {
 	}else
 	hitWindow=260;
 }
-public function screwYou() unfair.visible=SCREWYOU=!SCREWYOU;
-function destroy() hitWindow=260;
+public function screwYou() {
+	unfair.visible=SCREWYOU=!SCREWYOU;
+}
+function destroy() {
+	hitWindow=260;
+}

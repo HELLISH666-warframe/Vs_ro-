@@ -1,8 +1,14 @@
 {
-	"displayName": "Bijuu",
-	"bpm": 150.0,
+	"opponentModeAllowed": true,
 	"icon": "bijuuron",
+	"difficulties": [
+		"hard"
+	],
 	"color": "#00B439",
-    "coopAllowed": true,
-    "opponentModeAllowed": true
+	"coopAllowed": true,
+	"stepsPerBeat": 4,
+	"displayName": "Bijuu",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 150
 }
